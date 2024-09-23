@@ -14,8 +14,8 @@ class Cliente:
     def ejecutar(self):
         return self.servicio_saludo.saludar()
 
-# Inyectamos la dependencia con un método
+# Inyectamos la dependencia con un method
 servicio = ServicioSaludo()
 cliente = Cliente()
 cliente.set_servicio(servicio)
-print(cliente.ejecutar())  # Salida: Hola, método!
+print(cliente.ejecutar())  # Salida: Hola, method!
